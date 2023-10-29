@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Form Tags Example</title>
+    </head>
+    <body>
+        <h1>HTML Form Tags Example</h1>
+        <form method="post" action="submit.php">
+            <label for="username">Username:</label>
+        
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male" name="gender">Male</option>
+                <option value="female" name="gender">Female</option>
+                <option value="other" name="other">Other</option>
+            </select>
+            <br>
+            <fieldset>
+                <legend>Interests:</legend>
+                <label><input type="checkbox" name="interests" value="sports">Sports</label>
+                <label><input type="checkbox" name="interests" value="music">Music</label>
+                <label><input type="checkbox" name="interests" value="movies">Movies</label>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
